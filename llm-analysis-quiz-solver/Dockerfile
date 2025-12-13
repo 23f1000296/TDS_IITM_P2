@@ -27,7 +27,7 @@ ENV PYTHONUNBUFFERED=1
 ENV PYTHONIOENCODING=utf-8
 
 # --- Install project dependencies using uv ---
-RUN uv sync --frozen
+RUN uv sync
 
 # HuggingFace Spaces exposes port 7860
 EXPOSE 7860
